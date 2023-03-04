@@ -25,6 +25,7 @@ const Home: NextPage = () => {
   const router = useRouter();
   const { locale } = router;
   const t = locale === 'en' ? en : fr;
+
   return (
     <>
       <Head>
@@ -33,7 +34,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
         <Navbar/>
-      <main className="flex min-h-screen flex-col items-center justify-center bg-[#000814]">
+      <main className="flex min-h-screen flex-col items-center justify-center bg-white dark:bg-[#000814]" >
             <br/>
             <br/>
             <br/>
