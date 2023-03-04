@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+html{
+    background-color: black;
+}
+.custom-homepage-gradient {
+    background: radial-gradient(circle at 54% 53%,#0e0e1d, #57559e80, #d6d5e600)
+    /* background: conic-gradient(from 230.29deg at 51.63% 52.16%,#2400ff 0deg,#0087ff 67.5deg,#6c279d 198.75deg,#1826a3 251.25deg,#3667c4 301.88deg,#691eff 1turn); */
+    /* filter: blur(160px); */
+    /* transform: translateZ(0) */
+}
+
+/* bg-gradient-to-b from-[#2e026d] to-[#15162c] */
