@@ -9,10 +9,22 @@ import Badge from "~/components/Badge";
 import Hero from "~/components/Hero";
 import Features from "~/components/Features";
 import Review from "~/components/Review";
+import Rating from "~/components/Raging";
+
+
+import { useRouter } from 'next/router';
+import { useState } from 'react';
+
+import en from '../locales/en';
+import fr from '../locales/fr';
+
+
 
 const Home: NextPage = () => {
   const hello = api.example.hello.useQuery({ text: "from tRPC" });
-
+  const router = useRouter();
+  const { locale } = router;
+  const t = locale === 'en' ? en : fr;
   return (
     <>
       <Head>
@@ -28,9 +40,13 @@ const Home: NextPage = () => {
             <br/>
             <br/>
             <br/>
+            <br/>
+            <br/>
+            <p className="text-white">{t.welcome}</p>
             <Badge/>
-            <Review/>
-            <Hero/>
+            {/* <Review/>
+            <Rating/>
+            <Hero/> */}
             <Features />
         <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16 ">
           <h1 className="text-5xl font-extrabold tracking-tight text-white sm:text-[5rem]">

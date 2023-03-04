@@ -27,7 +27,9 @@
     "**/*.ts",
     "**/*.tsx",
     "**/*.cjs",
-    "**/*.mjs"
+    "**/*.mjs",
+    "src/locale/en.js",
+    "src/locale/en.js"
   ],
   "exclude": ["node_modules"]
 }
